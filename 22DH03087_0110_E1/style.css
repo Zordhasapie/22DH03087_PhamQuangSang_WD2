@@ -3,10 +3,6 @@ html {
     height: 100%;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .background-img {
     background-image: url("Assets/images/background.png");
 
@@ -17,7 +13,7 @@ html {
 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: ;
 }
 
 .container {

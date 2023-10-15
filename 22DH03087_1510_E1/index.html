@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <!-- <link rel="stylesheet" href="MyCSS/myCSS.css"> -->
+    <style>
+        /* BORDER STYLE */
+        p.dotted {
+            border-style: dotted;
+        }
+
+        p.dashed {
+            border-style: dashed;
+        }
+
+        p.solid {
+            border-style: solid;
+        }
+
+        p.double {
+            border-style: double;
+        }
+
+        p.groove {
+            border-style: groove;
+        }
+
+        p.ridge {
+            border-style: ridge;
+        }
+
+        p.inset {
+            border-style: inset;
+        }
+
+        p.outset {
+            border-style: outset;
+        }
+
+        p.none {
+            border-style: none;
+        }
+
+        p.hidden {
+            border-style: hidden;
+        }
+
+        p.mix {
+            border-style: dotted dashed solid double;
+        }
+
+        p.para1w {
+            border-style: solid;
+            width: 200px;
+            border-color: green;
+        }
+
+        p.para2w {
+            border-style: solid;
+            width: 100px;
+            border-color: red;
+        }
+
+        p.mix2 {
+            border-style: dotted solid dotted solid;
+            width: fit-content;
+        }
+
+        p.round1 {
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        p.round2 {
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+
+        /* END BORDER STYLE */
+
+        /* DISPLAY STYLE */
+
+        .grid {
+            display: grid;
+        }
+
+        .grid.grid-cols-2 {
+            grid-template-columns: auto auto;
+        }
+
+        .grid.grid-cols-4 {
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .grid.gap-15 {
+            gap: 15px;
+        }
+
+        /* END DISPLAY STYLE */
+
+        /* SPACING */
+
+        div.m {
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            background-color: lightblue;
+        }
+
+        div.p {
+            border: 1px solid black;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+            background-color: lightblue;
+        }
+
+        /* END SPACING */
+
+        /* SIZE */
+
+        div.h-200 {
+            height: 200px;
+        }
+
+        div.w-50p {
+            width: 50%;
+        }
+
+        div.bg-pblue {
+            background-color: powderblue;
+        }
+
+        div.bg-lgray {
+            background-color: lightgray;
+        }
+
+        div.mt-15 {
+            margin-top: 15px;
+        }
+
+        div.w-300 {
+            width: 300px;
+        }
+
+
+        div.border {
+            border-color: green;
+            border-width: 15px;
+            border-style: solid;
+        }
+
+        div.p-50 {
+            padding: 50px;
+        }
+
+        div.m-20 {
+            margin: 20px;
+        }
+
+        /* END SIZE */
+    </style>
+</head>
+
+<body>
+    <div class="grid grid-cols-4 gap-15">
+        <p class="dotted">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="dashed">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="solid">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="double">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="groove">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="ridge">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="inset">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="outset">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="none">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="hidden">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="mix">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+    </div>
+    <div class=" gap-15">
+        <p class="para1w">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="para2w">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+    </div>
+    <div class="gap-15">
+        <p class="mix2">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+    </div>
+    <div class="grid grid-cols-2 gap-15 ">
+        <p class="round1">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+        <p class="round2">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        </p>
+    </div>
+    <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h2>
+    <div class="m">
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+
+    </div>
+    <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h2>
+    <div class="p">
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+
+    </div>
+
+    <div class="h-200 w-50p bg-pblue mt-15">
+
+    </div>
+
+    <div class="bg-lgray w-300 border p-50 m-20">
+
+    </div>
+    
+</body>
+
+</html>

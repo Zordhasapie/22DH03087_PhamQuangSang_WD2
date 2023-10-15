@@ -1,0 +1,69 @@
+/* color for text */
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.pink {
+    color: pink;
+}
+
+/* other css */
+
+body {
+    background-image: linear-gradient(90deg, rgba(25, 136, 247, 1) 0%, rgba(247, 25, 136, 1) 100%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto minmax(160px, auto) auto;
+    grid-template-areas:
+        'header header'
+        'leftbar main'
+        'footer footer';
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-image: url(https://cdn.discordapp.com/attachments/889786494120779777/1041919442277380116/FB_IMG_1668483336201.jpg?ex=65373b98&is=6524c698&hm=ee46d68214bd03b1d08e8aa7a541328dc5ddd9a2d8b66a603e797b55ada9e497&);
+    background-size: contain;
+}
+.header h1{
+    color: aliceblue;
+}
+
+.left-bar {
+    grid-area: leftbar;
+}
+
+.main {
+grid-area: main;
+}
+
+.footer {
+grid-area: footer;
+}
+
+.grid-item {
+    color: #242424;
+    background-color: #f25fff;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+}
